@@ -1,0 +1,209 @@
+/* =========================================
+   MAIN
+========================================= */
+
+main.container {
+    padding-bottom: 50px;
+}
+
+/* =========================================
+   SOBRE MIM MODERNO
+========================================= */
+
+.sobre-mim {
+
+    background: rgba(255,255,255,0.75);
+
+    backdrop-filter: blur(12px);
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    margin-bottom: 40px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.08);
+
+    transition: 0.4s ease;
+}
+
+/* Hover */
+
+.sobre-mim:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+/* Badge */
+
+.badge-dev {
+
+    display: inline-block;
+
+    background: linear-gradient(
+        90deg,
+        #30615e,
+        #4ca39e
+    );
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 18px;
+
+    font-weight: 600;
+}
+
+/* Título */
+
+.sobre-texto h2 {
+
+    font-size: 2rem;
+
+    color: #2f3542;
+
+    margin-bottom: 15px;
+}
+
+/* Descrição */
+
+.descricao {
+
+    color: #57606f;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   GRID SOBRE MIM
+========================================= */
+
+.sobre-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+/* =========================================
+   INFO CARDS
+========================================= */
+
+.info-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    transition: 0.3s ease;
+
+    border: 1px solid #f1f2f6;
+}
+
+/* Hover */
+
+.info-card:hover {
+
+    transform: scale(1.03);
+
+    border-color: #30615e;
+
+    box-shadow:
+        0 10px 25px rgba(48,97,94,0.15);
+
+}
+
+/* Emoji */
+
+.info-card span {
+
+    font-size: 2rem;
+}
+
+/* Título interno */
+
+.info-card h4 {
+
+    color: #2f3542;
+
+    margin-bottom: 5px;
+}
+
+/* Texto */
+
+.info-card p {
+
+    color: #57606f;
+
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   POSTAGENS
+========================================= */
+
+.postagens h3 {
+
+    color: #30615e;
+
+    margin-bottom: 25px;
+
+    font-size: 1.7rem;
+
+    text-align: center;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .sobre-mim {
+
+        padding: 25px;
+    }
+
+    .sobre-texto h2 {
+
+        font-size: 1.5rem;
+    }
+
+    .descricao {
+
+        font-size: 1rem;
+    }
+
+    .sobre-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}

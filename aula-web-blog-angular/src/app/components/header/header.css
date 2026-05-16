@@ -1,0 +1,19 @@
+header {
+    background-color: #30615e;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border-radius: 0 0 50px 50px;
+}
+
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 40px;
+}
+
+.tagline-header {
+    font-size: 1.1rem;
+}
+
